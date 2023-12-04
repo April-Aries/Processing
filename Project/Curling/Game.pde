@@ -213,6 +213,7 @@ void game_setup()
   Ground_I.resize(624,957);
   friction = FOG[selectedG];                    //這裡代入場地(替換0)
   
+  turn = 0;
   BBS = 1;
   Dpm_X[BBS-1] = 0;
   Dpm_Y[BBS-1] = 0;
