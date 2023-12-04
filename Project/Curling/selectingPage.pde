@@ -223,7 +223,8 @@ void mousePressed()
       turn = 2;
     }
     if (mouseX > 0 && mouseX < 200 && mouseY > 0 && mouseY < 100) {
-      score = 0; // 離開遊戲成績應該清0對吧？  
+      score = 0; // 離開遊戲成績應該清0對吧？  對
+      textAlign(LEFT);
       PAGE = PAGE_HOME;
     }
   }

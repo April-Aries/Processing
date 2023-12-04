@@ -38,9 +38,9 @@ void show_game_page()
   rect(pixelWidth-200,150,200,100);
   fill(0);
   textSize(50);
-  text("Score:",pixelWidth-500,200);
+  text("Score:",pixelWidth-320,190);
   textSize(80);
-  text(score,pixelWidth-230,180);
+  text(score,pixelWidth-110,180);
   
   // Back button ( Here is not an actual button though )
   fill( #F5EFE0 );
@@ -48,7 +48,7 @@ void show_game_page()
   fill( 0 );
   textFont( Noto );
   textSize(50);
-  text( "Back", 40, 70 );
+  text( "Back", 160, 70 );
   
   noFill();
   image( Ground_I , pixelWidth/2,pixelHeight/2);
@@ -171,6 +171,7 @@ void show_game_page()
       if( BBS == 5){
         print(score);
         turn = 0;
+        textAlign(LEFT);
         PAGE = PAGE_END;    //這裡代入結算畫面，現在丟完五顆就退出是正常的
       }else{
         BBS += 1;
@@ -205,6 +206,7 @@ void game_setup()
   strokeWeight(4);
   rectMode(CENTER);
   imageMode(CENTER);
+  textAlign(RIGHT);
   balls=5;  //設定球數
   Ball_I = loadImage(Ball_N[selectedB]);        //這裡代入球種(替換0)
   ec = EOB[0];                          //這裡代入球種(替換0)，這裡有個bug不好修，換球就先當成換皮吧，這行的數字不要改
