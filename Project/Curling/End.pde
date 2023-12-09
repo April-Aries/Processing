@@ -105,7 +105,7 @@ void show_end_page()
     }
     nameTB.Text = "";
   }
-  else if( mousePressed && button_backspace.OnClick( mouseX, mouseY ) && back_offset == 0 )
+  else if( mousePressed && button_backspace.OnClick( mouseX, mouseY ) && back_offset == 0 && nameTB.TextLength > 0 )
   {
     back_offset = 1;
     nameTB.BACKSPACE();
